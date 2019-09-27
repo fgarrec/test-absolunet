@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 90px; }
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF5252; }
+  .navbar-wrapper .navbar {
+    width: 100%;
+    max-width: 1280px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white; }
+
+.index .index-heading {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 45px; }
+
+.index span {
+  display: inherit;
+  text-align: center;
+  font-size: 24px; }
+
+/*  
+    La classe question-2 est sélectionnée juste pour éviter un conflit 
+    de style avec le reste du test. Le SCSS fonctionne très bien sans.
+*/
+.question-2 div {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto; }
+  .question-2 div:before {
+    content: "\2605";
+    position: absolute;
+    left: -36px;
+    top: 15px;
+    font-size: 52px;
+    line-height: 0;
+    color: orange; }
+  .question-2 div h1 {
+    margin-left: 20px;
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: -1px; }
+    .question-2 div h1:first-letter {
+      color: blue; }
+  .question-2 div ul {
+    position: relative;
+    display: grid;
+    grid: repeat(4, auto)/auto-flow 50%;
+    padding: 5px 25px;
+    list-style: none;
+    background-color: #f9f9f9; }
+    .question-2 div ul:after {
+      content: "";
+      position: absolute;
+      top: calc(-50% + 10px);
+      right: -10px;
+      display: block;
+      width: 80px;
+      height: 60px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(../src/img/html-icon.png); }
+    .question-2 div ul li:nth-child(2):before {
+      opacity: .1; }
+    .question-2 div ul li:nth-child(4) {
+      color: limegreen; }
+    .question-2 div ul li:nth-last-child(n + 5):before {
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+    .question-2 div ul li:nth-last-child(-n + 4):before {
+      content: "-";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+
+.bingo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+.nums-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; }
+  .nums-container li {
+    display: block;
+    width: calc(100%/3);
+    padding: 0; }

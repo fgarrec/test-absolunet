@@ -1,0 +1,17 @@
+.bingo-container{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.nums-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    li{
+        display: block;
+        width: calc(100%/3);
+        padding: 0;
+    }
+}

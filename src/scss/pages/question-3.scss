@@ -1,0 +1,54 @@
+//Colors
+$red: red;
+$grey-dark: #334455;
+$grey-medium: #666;
+$grey-light: #999999;
+
+//Borders
+$border-red:$red solid 1px;
+
+// Fonts Sizes
+$regular-text: 16px;
+$big-text: 32px;
+
+.fooBar {
+    padding:32px;
+    border: $border-red;
+    font-size:$regular-text;
+
+    &.big {
+        padding:64px;
+        font-size:$big-text;
+    }
+}
+.hello-world {
+    .col1 {
+        width:50%;
+        color:$grey-medium;
+        background-color:$grey-dark;
+        z-index:37;
+
+        @media (max-width:64em) {
+            width:75%;
+            color: $grey-light;
+            background-color:$grey-medium;
+        }
+    }
+    .col2 {
+        width:50%;
+        color:$grey-dark;
+        background-color:$grey-medium;
+
+        @media (max-width:64em) {
+            width:25%;
+        }
+    }
+}
+.lorem-ipsum {
+    padding:0px 2em;
+}
+.lorem-dolor {
+    &::before {
+        color:lighten($grey-medium, 20%);
+    }
+}
